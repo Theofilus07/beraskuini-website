@@ -1,5 +1,4 @@
 import { Wheat, MapPin, Phone, Instagram, Facebook } from "lucide-react";
-import logo from "../assets/logo.png";
 
 const TikTokIcon = ({ className }: { className?: string }) => (
   <svg viewBox="0 0 24 24" fill="currentColor" className={className}>
@@ -15,7 +14,11 @@ export default function Footer() {
           
           <div>
             <div className="flex items-center gap-2 h-12 mb-6">
-              <img src={logo} alt="Beraskuini Logo" className="h-12 w-auto object-contain" />
+              <img 
+                src="/logo.png" 
+                alt="BerasKuini Logo" 
+                className="h-12 w-auto object-contain" 
+              />
               <span className="font-bold text-2xl tracking-tight text-white">Beraskuini</span>
             </div>
             <p className="text-brand-accent/70 max-w-xs leading-relaxed">

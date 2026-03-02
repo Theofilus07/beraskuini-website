@@ -1,7 +1,6 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "motion/react";
 import { MoreVertical, X } from "lucide-react";
-import logo from '../assets/logo.png';
 
 export default function Navbar() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -22,7 +21,11 @@ export default function Navbar() {
             transition={{ duration: 0.5 }}
             className="flex items-center gap-2"
           >
-            <img src={logo} alt="Beraskuini Logo" className="h-10 w-auto object-contain" />
+            <img 
+              src="/logo.png" 
+              alt="BerasKuini Logo" 
+              className="h-10 w-auto object-contain" 
+            />
             <span className="font-bold text-xl tracking-tight text-brand-primary">Beraskuini</span>
           </motion.div>
           <div className="hidden md:flex space-x-8">
